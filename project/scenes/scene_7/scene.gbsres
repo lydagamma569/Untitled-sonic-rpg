@@ -2,33 +2,33 @@
   "_resourceType": "scene",
   "id": "7f591b97-fd46-4cda-a4c9-4eb6911374a5",
   "_index": 6,
-  "name": "Scene 7",
-  "backgroundId": "10032679-e84f-4d31-82f1-a90b19f3dcea",
-  "tilesetId": "",
-  "width": 20,
-  "height": 18,
   "type": "TOPDOWN",
-  "colorModeOverride": "none",
-  "paletteIds": [
-    "bebd63fa-000d-4b3f-8aad-a3125f43a82b",
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    "default-bg-4"
-  ],
-  "spritePaletteIds": [
-    null,
-    null,
-    ""
-  ],
-  "collisions": "",
-  "autoFadeSpeed": 1,
+  "name": "Scene 7",
   "symbol": "scene_7",
   "x": 648,
   "y": 80,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "10032679-e84f-4d31-82f1-a90b19f3dcea",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "bebd63fa-000d-4b3f-8aad-a3125f43a82b",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "default-bg-4"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
   "script": [
     {
       "command": "EVENT_ACTOR_HIDE",
@@ -43,7 +43,7 @@
         "text": [
           "*Knuckles is being\na moron",
           "This fight is\nincomplete.",
-          "Please come again\nlater"
+          "For now please\nchoose the outcome"
         ],
         "__section": "text",
         "avatarId": "",
@@ -69,8 +69,8 @@
       "command": "EVENT_CHOICE",
       "args": {
         "variable": "L0",
-        "trueText": "Go to Pallet Town",
-        "falseText": "Return to GHZ"
+        "trueText": "You win",
+        "falseText": "You lose"
       },
       "id": "f9ceaad2-11c7-467f-bff2-579af0b44d82"
     },
@@ -98,9 +98,88 @@
                 "value": 12
               },
               "direction": "down",
-              "fadeSpeed": "2"
+              "fadeSpeed": "2",
+              "__comment": true
             },
             "id": "a79f88dc-9f39-4c19-be15-40b6c41f8938"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Aw yeah!",
+                "I knew I could\ndo it"
+              ],
+              "__section": "text",
+              "avatarId": "24800446-af45-4575-a67c-251bd34c1232",
+              "minHeight": 5,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -3,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "97084144-b3dd-43e6-8fc1-745cbf4f0902"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Great job Sonic",
+                "hmm...",
+                "I wonder what\ntails is up to"
+              ],
+              "__section": "text",
+              "avatarId": "715e4224-843f-4f4c-8681-2ec7528cc61b",
+              "minHeight": 5,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -3,
+              "speedOut": -3,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "cec5e3aa-c5ad-4956-8d1d-9e149237a96d"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "I'll race you to\nhis workshop!"
+              ],
+              "__section": "text",
+              "avatarId": "24800446-af45-4575-a67c-251bd34c1232",
+              "minHeight": 5,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -3,
+              "speedOut": -3,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "cc2731e1-f1be-4c52-894f-9f3d81466cd2"
           }
         ],
         "false": []
@@ -128,5 +207,5 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "playerSpriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2"
+  "collisions": ""
 }

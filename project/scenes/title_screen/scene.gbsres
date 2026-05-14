@@ -2,25 +2,39 @@
   "_resourceType": "scene",
   "id": "7a89288c-f3bd-45ab-970a-bb2a64f499dd",
   "_index": 0,
-  "name": "Title Screen",
-  "backgroundId": "40e6836c-6ee3-4913-9f6c-317989a92c86",
-  "tilesetId": "",
-  "width": 48,
-  "height": 18,
   "type": "TOPDOWN",
-  "colorModeOverride": "none",
-  "paletteIds": [
-    null,
-    null,
-    null,
-    "251735e9-a2b0-435b-8ba4-52c259796993"
-  ],
-  "spritePaletteIds": [],
-  "collisions": "00360+",
-  "autoFadeSpeed": 1,
+  "name": "Title Screen",
   "symbol": "scene_1",
   "x": 152,
   "y": 600,
+  "width": 48,
+  "height": 18,
+  "backgroundId": "40e6836c-6ee3-4913-9f6c-317989a92c86",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    "251735e9-a2b0-435b-8ba4-52c259796993"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "parallax": [
+    {
+      "height": 12,
+      "speed": 0
+    },
+    {
+      "height": 5,
+      "speed": 1
+    },
+    {
+      "height": 0,
+      "speed": 0
+    }
+  ],
+  "playerSpriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
   "script": [
     {
       "command": "EVENT_SET_INPUT_SCRIPT",
@@ -78,19 +92,5 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "playerSpriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
-  "parallax": [
-    {
-      "height": 12,
-      "speed": 0
-    },
-    {
-      "height": 5,
-      "speed": 1
-    },
-    {
-      "height": 0,
-      "speed": 0
-    }
-  ]
+  "collisions": "00360+"
 }

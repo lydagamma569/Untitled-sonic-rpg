@@ -17,7 +17,29 @@
   "prefabScriptOverrides": {},
   "symbol": "actor_5",
   "script": [],
-  "startScript": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "__section": "movement",
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 10
+        },
+        "y": {
+          "type": "number",
+          "value": 8
+        },
+        "collideWith": [
+          "walls"
+        ],
+        "lockDirection": [],
+        "moveType": "horizontal"
+      },
+      "id": "0bc2dfd5-2716-46c5-800a-96db2f0f2a28"
+    }
+  ],
   "updateScript": [
     {
       "command": "EVENT_IF",
@@ -34,7 +56,8 @@
             "value": 8
           }
         },
-        "__collapseElse": false
+        "__collapseElse": false,
+        "__comment": true
       },
       "children": {
         "true": [
@@ -138,7 +161,8 @@
               "input": [
                 "up"
               ],
-              "__collapseElse": true
+              "__collapseElse": true,
+              "__comment": true
             },
             "children": {
               "true": [
@@ -174,7 +198,8 @@
               "input": [
                 "down"
               ],
-              "__collapseElse": true
+              "__collapseElse": true,
+              "__comment": true
             },
             "children": {
               "true": [
@@ -203,6 +228,27 @@
               "false": []
             },
             "id": "d3257633-e5ce-4be3-b08b-85aea7fd69dc"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "__section": "movement",
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 10
+              },
+              "y": {
+                "type": "number",
+                "value": 8
+              },
+              "collideWith": [
+                "walls"
+              ],
+              "lockDirection": [],
+              "moveType": "horizontal"
+            },
+            "id": "a31f3a8d-5bce-42c4-919e-0a048fb1d1d3"
           }
         ]
       },
