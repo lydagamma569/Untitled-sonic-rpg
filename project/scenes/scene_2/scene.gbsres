@@ -46,7 +46,8 @@
         "closeWhen": "key",
         "closeButton": "a",
         "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "closeDelayFrames": 30,
+        "__comment": true
       },
       "id": "f372ce60-68ac-4d50-9910-eff52ffa4e00"
     },
@@ -55,7 +56,8 @@
       "args": {
         "variable": "L0",
         "trueText": "Show controls",
-        "falseText": "Do not"
+        "falseText": "Do not",
+        "__comment": true
       },
       "id": "ab83ed60-2632-4bcd-9511-3e30458e210b"
     },
@@ -66,7 +68,8 @@
           "type": "variable",
           "value": "L0"
         },
-        "__collapseElse": true
+        "__collapseElse": true,
+        "__comment": true
       },
       "children": {
         "true": [

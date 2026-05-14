@@ -1,0 +1,94 @@
+{
+  "_resourceType": "trigger",
+  "id": "26e53d27-a29f-473a-b35e-86f2ef5a60ee",
+  "name": "",
+  "prefabId": "",
+  "x": 6,
+  "y": 24,
+  "symbol": "trigger_0",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Welcome to\nSonic RPG."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "e4da709e-8549-4bb6-b749-0d0d05d02b6f"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "L0",
+        "trueText": "Show controls",
+        "falseText": "Do not"
+      },
+      "id": "9d228f6a-1214-430a-b397-fae872c8cf07"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "L0"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Use the D-pad for\nmovement\n",
+                "Press the A button\nto interact with\nthe world",
+                "Hold the B button\nto run\n",
+                "More controls may\nbe added later\n"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "2d39f114-4c4d-4863-bc71-72af7e2c0811"
+          }
+        ],
+        "false": []
+      },
+      "id": "22178918-d36b-43e5-bc43-eff3f342f094"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 3
+}
