@@ -24,6 +24,27 @@
         "__comment": false
       },
       "id": "049fe8b8-e329-465f-829d-32ca0665f8f7"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "__section": "movement",
+        "actorId": "a1cf3e8e-4f0c-48fa-ab0b-af7871e8d734",
+        "x": {
+          "type": "number",
+          "value": 10
+        },
+        "y": {
+          "type": "number",
+          "value": 8
+        },
+        "collideWith": [
+          "walls"
+        ],
+        "lockDirection": [],
+        "moveType": "horizontal"
+      },
+      "id": "eb58077e-eaa4-493f-aa17-1ab871cc7720"
     }
   ],
   "playerHit1Script": [],
