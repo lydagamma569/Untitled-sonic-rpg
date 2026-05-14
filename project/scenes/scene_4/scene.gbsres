@@ -1,0 +1,23 @@
+{
+  "_resourceType": "scene",
+  "id": "69c8cfd3-6aab-4122-b778-41931d0772e4",
+  "_index": 3,
+  "name": "Scene 4",
+  "backgroundId": "04f29526-2c99-48ef-b420-8b542faf48b0",
+  "tilesetId": "",
+  "width": 40,
+  "height": 36,
+  "type": "ADVENTURE",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "006+0f2+00a+0f2+004+0f2+00a+0f2+008+0f2+00a+0f2+004+0f2+00a+0f2+002+0f14+004+0f24+004+0f12+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+004+0f2+00e+0f2+00e+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+006+0f8+0016+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0012+0fc+006+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f6+00c+0f1c+00c+0f18+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_4",
+  "x": 928,
+  "y": 608,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

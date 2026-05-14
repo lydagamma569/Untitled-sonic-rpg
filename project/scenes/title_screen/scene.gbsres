@@ -1,0 +1,96 @@
+{
+  "_resourceType": "scene",
+  "id": "7a89288c-f3bd-45ab-970a-bb2a64f499dd",
+  "_index": 0,
+  "name": "Title Screen",
+  "backgroundId": "40e6836c-6ee3-4913-9f6c-317989a92c86",
+  "tilesetId": "",
+  "width": 48,
+  "height": 18,
+  "type": "TOPDOWN",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    null,
+    null,
+    null,
+    "251735e9-a2b0-435b-8ba4-52c259796993"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "00360+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_1",
+  "x": 152,
+  "y": 600,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "db4457fc-d884-4f9a-95db-2483f88f0101",
+              "x": {
+                "type": "number",
+                "value": 6
+              },
+              "y": {
+                "type": "number",
+                "value": 25
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "b104666f-95a0-473d-93ef-47d30c02a039"
+          }
+        ]
+      },
+      "id": "70ff43e5-2cfc-4a79-b6ff-a826fe8940a3"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$",
+        "__comment": false
+      },
+      "id": "9dc329dc-9420-4fee-8ef1-8bf165e5df0a"
+    },
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "press start",
+        "x": 5,
+        "y": 16,
+        "location": "background",
+        "__collapse": false,
+        "__comment": true
+      },
+      "id": "7f0752d0-42ae-4b62-8338-c824583d6a6f"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+  "parallax": [
+    {
+      "height": 12,
+      "speed": 0
+    },
+    {
+      "height": 5,
+      "speed": 1
+    },
+    {
+      "height": 0,
+      "speed": 0
+    }
+  ]
+}

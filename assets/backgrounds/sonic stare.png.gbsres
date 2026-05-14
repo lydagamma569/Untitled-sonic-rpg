@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "9c6922a3-b13c-45f5-8cac-60a1a0049eae",
+  "name": "sonic stare",
+  "symbol": "bg_sonic_stare",
+  "tileColors": "03168+",
+  "filename": "sonic stare.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144
+}

@@ -1,0 +1,102 @@
+{
+  "_resourceType": "sprite",
+  "id": "03061ab8-5084-4eb1-80ff-410e80e07cd6",
+  "name": "knucklescolour",
+  "symbol": "sprite_knucklescolour",
+  "states": [
+    {
+      "id": "6647835f-d49e-405e-a25c-16be6578c254",
+      "name": "",
+      "animationType": "multi_movement",
+      "flipLeft": true,
+      "animations": [
+        {
+          "id": "6c2e3146-3188-43a7-a9c8-2494a0d70f1d",
+          "frames": [
+            {
+              "id": "46787355-877c-45d3-a3ed-31ba12c8c6ee",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "709ca363-c1b4-4eb1-92ec-0c5e9e2ec51f",
+          "frames": [
+            {
+              "id": "76332d83-25c8-4c8f-afec-b9454d889f2c",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "42a511d4-e291-4039-8126-f0e0c9060a2f",
+          "frames": [
+            {
+              "id": "cb24c94a-4920-4c21-a721-eb4f10310952",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "998a4542-dea2-4d2b-9655-4aba21002e88",
+          "frames": [
+            {
+              "id": "11b0df75-e194-4307-aae5-b5386a1e8864",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "028ad10e-ad5e-48df-aa90-4a6b5050d31c",
+          "frames": [
+            {
+              "id": "3a4645f5-ad2f-4253-bd43-f04daaebda4f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "dd3e56c7-2704-48eb-a905-58e4fea18426",
+          "frames": [
+            {
+              "id": "62d6109a-a27a-4ea0-9228-050d4951c5b7",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a974d046-3fba-427f-aff4-0e53941ca8bb",
+          "frames": [
+            {
+              "id": "5bdf85a1-e74f-4aa4-94ce-d5acd0c3b6ec",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "32192668-1926-41de-8e46-9eaea6516933",
+          "frames": [
+            {
+              "id": "eb27c32f-a285-4ee0-8162-fd6939a3249c",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "knucklescolour.png",
+  "width": 160,
+  "height": 144,
+  "checksum": "5feb44483ef3a9b5570e15d3775c27b9a4c02f8f"
+}

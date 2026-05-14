@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "10032679-e84f-4d31-82f1-a90b19f3dcea",
+  "name": "sonicfight",
+  "symbol": "bg_sonicfight",
+  "tileColors": "",
+  "filename": "sonicfight.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144
+}

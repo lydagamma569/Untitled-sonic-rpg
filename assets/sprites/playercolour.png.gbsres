@@ -1,0 +1,102 @@
+{
+  "_resourceType": "sprite",
+  "id": "dd386751-a754-4a49-a39f-0146a126ef0a",
+  "name": "playercolour",
+  "symbol": "sprite_playercolour",
+  "states": [
+    {
+      "id": "bda25b4b-07d4-43be-8c4b-090a0e7aa70b",
+      "name": "",
+      "animationType": "multi_movement",
+      "flipLeft": true,
+      "animations": [
+        {
+          "id": "a0cb2771-52d9-46b8-86eb-ec0ead32469e",
+          "frames": [
+            {
+              "id": "0d8c285b-6b5e-4377-9e7f-9f526ee50492",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ff0ee5fb-ea4a-467c-8b2c-023ddab4ca41",
+          "frames": [
+            {
+              "id": "869e6a00-7fde-4847-8793-5ddd8eb32a39",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "cfa0834b-7b4f-4646-9d10-c13631098b4d",
+          "frames": [
+            {
+              "id": "b69ca045-8997-4bb5-9266-79f393c78b3c",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "8efd1166-9568-4e55-95c7-67026f7418e0",
+          "frames": [
+            {
+              "id": "e70cc9d2-9a65-4871-9761-35040fedc596",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "6c6e4c9e-c996-4970-9316-5465ef24728e",
+          "frames": [
+            {
+              "id": "b6a8ba92-6584-40c4-8a39-18e42c0f786e",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a26b21ae-c0ea-49d3-9a53-635f6f18d4c3",
+          "frames": [
+            {
+              "id": "27be9d5f-9ef9-40b8-9a63-0be397a1afdf",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ea7cefcf-3b1b-43d0-93be-0af57160b2f4",
+          "frames": [
+            {
+              "id": "db45c5f0-9491-435d-8951-eb6464ad8ab6",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "c34835eb-47cb-4c3a-99ed-4233c03e6b2a",
+          "frames": [
+            {
+              "id": "76132646-5b12-4fe3-a3bd-c95e984530cc",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "playercolour.png",
+  "width": 256,
+  "height": 256,
+  "checksum": "1a63572ea9a679e18c145fa78e3abd7d0a8079a1"
+}

@@ -1,0 +1,58 @@
+{
+  "_resourceType": "trigger",
+  "id": "66008926-bdae-4798-a55a-1dac1a5ee8e9",
+  "name": "",
+  "prefabId": "",
+  "x": 22,
+  "y": 10,
+  "symbol": "trigger_11",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "*Ding dong",
+                "Who is it?",
+                "..."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "03dfc8c9-372d-4678-a78f-0233b0172d2d"
+          }
+        ]
+      },
+      "id": "2e53277a-4205-4cbf-935e-b2f40eba4319"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 3
+}

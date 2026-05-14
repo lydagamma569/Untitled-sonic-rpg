@@ -1,0 +1,33 @@
+{
+  "_resourceType": "scene",
+  "id": "06d87664-7e92-4612-81aa-11d40b960a97",
+  "_index": 5,
+  "name": "Scene 6",
+  "backgroundId": "068b4590-c332-4694-84b0-62e05bcd7e4a",
+  "tilesetId": "fe7e8d41-4c36-444d-be8f-b2d4d1df3d14",
+  "width": 20,
+  "height": 18,
+  "type": "ADVENTURE",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "00154+0fa+003+0f7+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_6",
+  "x": 648,
+  "y": 272,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$",
+        "__comment": true
+      },
+      "id": "049fe8b8-e329-465f-829d-32ca0665f8f7"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2"
+}

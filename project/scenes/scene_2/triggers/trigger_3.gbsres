@@ -1,0 +1,56 @@
+{
+  "_resourceType": "trigger",
+  "id": "497dabec-ba07-4f52-a58b-c202b1c35217",
+  "name": "",
+  "prefabId": "",
+  "x": 0,
+  "y": 8,
+  "symbol": "trigger_15",
+  "prefabScriptOverrides": {},
+  "width": 1,
+  "height": 3,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Dang it must be \na dead-end"
+              ],
+              "__section": "text",
+              "avatarId": "24800446-af45-4575-a67c-251bd34c1232",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "a67ce662-67d1-4658-9e64-cceb4a1cb5ad"
+          }
+        ]
+      },
+      "id": "79df61ce-ac0f-435e-ab26-c41087de2d8d"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 2
+}

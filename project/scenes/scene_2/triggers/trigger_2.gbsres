@@ -1,0 +1,57 @@
+{
+  "_resourceType": "trigger",
+  "id": "b5294430-d7f0-4971-9ea1-ee3dde2d292b",
+  "name": "",
+  "prefabId": "",
+  "x": 15,
+  "y": 18,
+  "symbol": "trigger_14",
+  "prefabScriptOverrides": {},
+  "width": 11,
+  "height": 3,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Hmm...",
+                "Maybe Knuckles\ncan climb up \nthere"
+              ],
+              "__section": "text",
+              "avatarId": "24800446-af45-4575-a67c-251bd34c1232",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "025e02d2-3715-4f03-b70e-d98d26d3a90a"
+          }
+        ]
+      },
+      "id": "5c400789-d936-4376-9a16-897234983866"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 1
+}

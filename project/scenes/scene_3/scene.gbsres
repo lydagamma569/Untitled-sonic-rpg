@@ -1,0 +1,23 @@
+{
+  "_resourceType": "scene",
+  "id": "d6fb36a0-ca1e-4f50-a40b-746039273668",
+  "_index": 2,
+  "name": "Scene 3",
+  "backgroundId": "33244b39-b975-4627-83d1-280ff2861d82",
+  "tilesetId": "",
+  "width": 20,
+  "height": 22,
+  "type": "ADVENTURE",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "009+0f!003+0f!00f+0f!003+0f!008+0f7+1a!003+16!0f4+004+0f!00e+0f!004+0f3+00c+0f!004+0f3+00c+0f!004+0f3+004+0f2+006+0f!004+0f3+024+0f2+006+0f!004+0f3+004+0f2+006+0f!004+0f3+004+0f2+006+0f!004+0f3+004+0f2+006+0f!004+0f!02a+0f!003+0f!004+0f!00e+0f!003+0f2+00e+0f!003+0f2+00e+0f!003+0f2+003+0f!02a+0f!003+0f2+00e+0f!004+0f!00e+0f!004+0f!00e+0f!004+0fc+003+0f!005+0fb+003+0f!005+0fb+003+0f2+00!",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_3",
+  "x": 648,
+  "y": 416,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

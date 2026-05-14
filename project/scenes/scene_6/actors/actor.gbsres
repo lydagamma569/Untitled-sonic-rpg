@@ -1,0 +1,226 @@
+{
+  "_resourceType": "actor",
+  "id": "21c00850-f27c-4ba0-8539-c57b0a76b4aa",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "1ebd0006-2bab-4811-adc6-7a8a092a9ffe",
+  "prefabId": "",
+  "direction": "left",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "symbol": "actor_4",
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_IF_ACTOR_AT_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "property",
+          "target": "player",
+          "property": "xpos"
+        },
+        "y": {
+          "type": "number",
+          "value": 8
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "__section": "movement",
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 10
+              },
+              "y": {
+                "type": "number",
+                "value": 8
+              },
+              "collideWith": [
+                "walls"
+              ],
+              "lockDirection": [],
+              "moveType": "horizontal"
+            },
+            "id": "d23bcbfd-9a54-44d0-b3f1-356b1d50db15"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Hey Sonic!",
+                "Lets spar"
+              ],
+              "__section": "text",
+              "avatarId": "715e4224-843f-4f4c-8681-2ec7528cc61b",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "be91de1d-3dd5-43a0-979c-371877d6b799"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "L0",
+              "trueText": "Bring it on!",
+              "falseText": "Nah I'm good"
+            },
+            "id": "67dc5931-72f9-4ad9-b55c-08b1c2d80554"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "L0"
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Taste my fists!"
+                    ],
+                    "__section": "text",
+                    "avatarId": "715e4224-843f-4f4c-8681-2ec7528cc61b",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "48587bdb-bd82-4091-86e3-e11245771e4c"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "7f591b97-fd46-4cda-a4c9-4eb6911374a5",
+                    "x": {
+                      "type": "number",
+                      "value": 18
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 17
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "e1421282-b271-46dc-bb5d-a254a7b3dfd3"
+                }
+              ],
+              "false": []
+            },
+            "id": "8b440dc1-8f3b-46aa-b4d2-ec2ffea07d79"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Aww ok..."
+              ],
+              "__section": "text",
+              "avatarId": "715e4224-843f-4f4c-8681-2ec7528cc61b",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "978b817d-d30f-40c3-bbfd-f9d17e99a9f1"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "__section": "movement",
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 21
+              },
+              "y": {
+                "type": "number",
+                "value": 8
+              },
+              "collideWith": [
+                "walls"
+              ],
+              "lockDirection": [],
+              "moveType": "horizontal"
+            },
+            "id": "77fce018-1913-4269-92d7-4dfe75467dab"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "b6aba367-6f79-446a-9abd-7aec5337ea38"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "a2d332cb-56fa-41ea-9ef8-99beceb58cc8"
+          }
+        ],
+        "false": []
+      },
+      "id": "3b1d3b48-f621-445c-b09a-df3bc836288c"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "coordinateType": "tiles",
+  "x": 18,
+  "y": 8,
+  "_index": 0
+}

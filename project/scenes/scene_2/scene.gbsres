@@ -1,0 +1,110 @@
+{
+  "_resourceType": "scene",
+  "id": "db4457fc-d884-4f9a-95db-2483f88f0101",
+  "_index": 1,
+  "name": "Scene 2",
+  "backgroundId": "31d10eb8-684e-479f-b07d-fd4580f37865",
+  "tilesetId": "",
+  "width": 32,
+  "height": 29,
+  "type": "ADVENTURE",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "008+04!0010+08!003+04!002+04!006+08!04!0010+08!003+04!002+04!006+08!04!0010+08!003+04!002+04!006+08!16!0210+1a!003+04!002+04!006+08!0015+04!002+04!006+08!0015+04!002+04!006+08!0015+04!002+0f!026+1a!003+0f12+00e+04!002+08!04!001b+04!002+08!04!001b+04!02!00!08!04!0010+0f8+003+16!02!00!08!04!0010+0f!026+1a!005+04!08!04!0010+0f!00c+04!08!0f!0010+0f!00c+04!08!00!024+00c+0f!00c+04!08!0011+0f!00c+04!08!0011+0f!00c+04!08!006+024+0f5+002+0f!00c+16!0f2+003+0f!00!0f!002+0f!004+0f!002+0f!00f+16!022+0f3+022+1a!004+0f!002+0f!003+15!0f4+19!0013+0f!002+0f!002+15!0f6+19!0012+0f!002+0f!002+0f8+0012+0f!002+0f!002+0f3+002+0f3+0012+0f!002+0f!002+16!0f!1a!002+16!0f!1a!0012+0f!002+0f!001c+0f!002+0f!001c+0f!002+0f!001c+0f!002+0f1e+002+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_2",
+  "x": 552,
+  "y": 592,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "a9e7560a-95d5-4637-9666-18e7c4a8c117",
+        "__comment": true
+      },
+      "id": "dd472ee3-0346-4e95-a936-ba2d2ce64d51"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Welcome to\nSonic RPG."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "f372ce60-68ac-4d50-9910-eff52ffa4e00"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "L0",
+        "trueText": "Show controls",
+        "falseText": "Do not"
+      },
+      "id": "ab83ed60-2632-4bcd-9511-3e30458e210b"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "L0"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Use the D-pad for\nmovement\n",
+                "Press the A button\nto interact with\nthe world",
+                "Hold the B button\nto run\n",
+                "More controls may\nbe added later\n"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "39123806-23b8-4cf3-80df-4c4242cd5be3"
+          }
+        ],
+        "false": []
+      },
+      "id": "6e166e07-0d2a-46f5-ba77-fe29c03d5437"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

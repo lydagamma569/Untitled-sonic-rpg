@@ -1,0 +1,219 @@
+{
+  "_resourceType": "actor",
+  "id": "a1cf3e8e-4f0c-48fa-ab0b-af7871e8d734",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "cd626f05-3341-4a6b-b5c1-df22df8852d5",
+  "prefabId": "",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "symbol": "actor_5",
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "property",
+            "target": "player",
+            "property": "ypos"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 8
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 10
+              },
+              "y": {
+                "type": "number",
+                "value": 8
+              },
+              "__comment": false
+            },
+            "id": "85097c58-8602-4c40-a0cf-7105d2d87cb1"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "down"
+              ],
+              "override": true,
+              "__scriptTabs": "press",
+              "__comment": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                  "args": {
+                    "__section": "movement",
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 1
+                    },
+                    "collideWith": [
+                      "walls"
+                    ],
+                    "lockDirection": [],
+                    "moveType": "horizontal"
+                  },
+                  "id": "31d9b426-bfdf-42c2-b399-f2bfe598d884"
+                }
+              ]
+            },
+            "id": "8ec04a73-a4f2-490c-99a7-703f8fc92c91"
+          },
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "up"
+              ],
+              "override": true,
+              "__scriptTabs": "press",
+              "__comment": true
+            },
+            "children": {
+              "true": []
+            },
+            "id": "ab7412aa-b951-49fa-adb6-11c60d53572f"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "__section": "movement",
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 80
+              },
+              "y": {
+                "type": "property",
+                "target": "player",
+                "property": "pypos"
+              },
+              "collideWith": [
+                "walls"
+              ],
+              "lockDirection": [],
+              "moveType": "horizontal",
+              "units": "pixels",
+              "__comment": true
+            },
+            "id": "05124817-8391-4233-88ad-de593a68ccc7"
+          },
+          {
+            "command": "EVENT_IF_INPUT",
+            "args": {
+              "input": [
+                "up"
+              ],
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                  "args": {
+                    "__section": "movement",
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": -1
+                    },
+                    "collideWith": [
+                      "walls"
+                    ],
+                    "lockDirection": [],
+                    "moveType": "horizontal"
+                  },
+                  "id": "4d77fb8f-c077-4458-a72f-d6924ec06d53"
+                }
+              ],
+              "false": []
+            },
+            "id": "ec662459-402c-464a-8cad-7323e28d9c0a"
+          },
+          {
+            "command": "EVENT_IF_INPUT",
+            "args": {
+              "input": [
+                "down"
+              ],
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                  "args": {
+                    "__section": "movement",
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 1
+                    },
+                    "collideWith": [
+                      "walls"
+                    ],
+                    "lockDirection": [],
+                    "moveType": "horizontal"
+                  },
+                  "id": "3532eabf-f80b-4bc2-8d9c-a48a97e9e442"
+                }
+              ],
+              "false": []
+            },
+            "id": "d3257633-e5ce-4be3-b08b-85aea7fd69dc"
+          }
+        ]
+      },
+      "id": "390ccb46-fece-4073-9b6c-62b2692273ca"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "coordinateType": "tiles",
+  "x": 10,
+  "y": 16,
+  "_index": 1
+}

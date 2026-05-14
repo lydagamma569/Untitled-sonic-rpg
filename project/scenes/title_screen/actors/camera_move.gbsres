@@ -1,0 +1,283 @@
+{
+  "_resourceType": "actor",
+  "id": "34764e45-c263-427e-b33d-7b03c25091a7",
+  "name": "camera move",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": true,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "symbol": "actor_1",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$",
+        "__comment": false
+      },
+      "id": "02ce8af9-92b6-44c8-9a13-c401da8337ed"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "property",
+            "target": "camera",
+            "property": "xpos"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 34
+          }
+        },
+        "__collapseElse": false,
+        "__comment": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CAMERA_MOVE_TO",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "speed": 0
+            },
+            "id": "246fb33d-39e2-4005-b45f-936a867f6922"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_CAMERA_MOVE_TO",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 24
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "speed": 1
+            },
+            "id": "f3563cac-70d2-408d-95ad-7c0dd0429f6b"
+          }
+        ]
+      },
+      "id": "7bfd8a1c-c37a-4420-91db-5ae05446576c"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_AT_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 34
+        },
+        "y": {
+          "type": "property",
+          "target": "player",
+          "property": "ypos"
+        },
+        "__collapseElse": false,
+        "__comment": true,
+        "__collapse": false,
+        "__disableElse": false
+      },
+      "children": {
+        "true": [],
+        "false": []
+      },
+      "id": "775f8f15-79f7-4e35-beab-c5729ca5d39a"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "__section": "movement",
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 34
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "collideWith": [
+          "walls"
+        ],
+        "lockDirection": [],
+        "moveType": "horizontal",
+        "__comment": false,
+        "__collapse": false
+      },
+      "id": "f8b93e90-a70c-410a-b10c-eb2b467c5123"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "__section": "movement",
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 34
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "collideWith": [
+          "walls"
+        ],
+        "lockDirection": [],
+        "moveType": "horizontal",
+        "__comment": true,
+        "__collapse": false
+      },
+      "id": "6d991ed0-e795-4429-86a9-61ce0c87fc26"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 10
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "__comment": true
+      },
+      "id": "d4f2da10-450e-4be3-a526-ee7bdb9ae685"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L0",
+        "value": {
+          "type": "property",
+          "target": "$self$",
+          "property": "xpos"
+        }
+      },
+      "id": "03cfb03d-019d-4b39-86e2-fd5bc44c07be"
+    },
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "$L0$",
+        "x": 1,
+        "y": 1,
+        "location": "overlay"
+      },
+      "id": "0af07df7-68c5-4b14-8c8b-a385212f51b5"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gt",
+          "valueA": {
+            "type": "property",
+            "target": "player",
+            "property": "xpos"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 34
+          }
+        },
+        "__collapseElse": false,
+        "__comment": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 10
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "9e9b1ea4-4493-456c-81cd-bed5d5fb5973"
+          }
+        ],
+        "false": []
+      },
+      "id": "a4803050-87f2-4fcb-a29d-ef54ed8cae16"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "property",
+          "target": "player",
+          "property": "xpos"
+        },
+        "y": {
+          "type": "property",
+          "target": "player",
+          "property": "ypos"
+        },
+        "__comment": true
+      },
+      "id": "c41a78a1-5a37-47d3-b24a-3b79813402cf"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "__section": "movement",
+        "actorId": "$self$",
+        "x": {
+          "type": "property",
+          "target": "$self$",
+          "property": "xpos"
+        },
+        "y": {
+          "type": "property",
+          "target": "player",
+          "property": "ypos"
+        },
+        "collideWith": [],
+        "lockDirection": [],
+        "moveType": "horizontal",
+        "__comment": true
+      },
+      "id": "da45f3a7-b9d4-4cdf-8dd2-ea7baf3f0bc8"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "coordinateType": "tiles",
+  "x": 46,
+  "y": 0,
+  "_index": 0
+}

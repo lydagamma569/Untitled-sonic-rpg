@@ -1,0 +1,102 @@
+{
+  "_resourceType": "sprite",
+  "id": "05f14cd8-cafd-4bef-89ec-aae5945f36e4",
+  "name": "kr/0003",
+  "symbol": "sprite_kr_0003",
+  "states": [
+    {
+      "id": "0cdaa472-98b2-4a1f-a4a4-b171184c2a60",
+      "name": "",
+      "animationType": "multi_movement",
+      "flipLeft": true,
+      "animations": [
+        {
+          "id": "aa0f3c53-ed69-42cf-9390-cd64facc6c0f",
+          "frames": [
+            {
+              "id": "405e9c95-e39b-46eb-9b43-fa52c06c7bb2",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "14fa02f4-6cfd-49b6-8518-2e1955abaf71",
+          "frames": [
+            {
+              "id": "bc4db485-a245-4375-a33f-1aae5b473919",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ab0206ee-d7f2-48bd-93d4-644c0c3ae278",
+          "frames": [
+            {
+              "id": "9d7baff0-33a9-48a9-8853-1a6f9d060929",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "d61ba56e-1db7-4758-97c0-9e115fa7fcc7",
+          "frames": [
+            {
+              "id": "355815ca-3874-4275-9a75-394c9805eed8",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "dfca8c80-d65d-45c0-8616-3a7a86712335",
+          "frames": [
+            {
+              "id": "96b037e3-79ba-4528-8948-6fa8f72d1ed3",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "b0b5d25d-4456-46aa-8774-04cbc2aa67b4",
+          "frames": [
+            {
+              "id": "129f760d-1503-4434-90e1-24a6b723eb96",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "fd58d4c8-1616-4852-bb1b-54fa74c4147c",
+          "frames": [
+            {
+              "id": "d5163e27-4ede-457d-bd1e-2e79bf674770",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "8bda1df1-c5f9-407d-b46f-cb3ab0d26470",
+          "frames": [
+            {
+              "id": "46f48aa9-e3c5-47a4-b4d8-a83ecb23a3ad",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 16,
+  "boundsHeight": 16,
+  "animSpeed": 15,
+  "filename": "kr/0003.png",
+  "width": 51,
+  "height": 49,
+  "checksum": "ac068b791e852f90237dfd026930467f2621d00f"
+}

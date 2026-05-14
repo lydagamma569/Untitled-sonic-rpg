@@ -1,0 +1,58 @@
+{
+  "_resourceType": "trigger",
+  "id": "d8948ef1-0d74-46e7-a315-3d1fcbe7657c",
+  "name": "",
+  "prefabId": "",
+  "x": 6,
+  "y": 8,
+  "symbol": "trigger_16",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "*You got the \n(placeholder)",
+                "*(placeholder)\nhas been added to\nyour inventory",
+                "Press Select to\nopen your inventory"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "9a53a5f2-3081-4cb4-aaab-9ef444b72138"
+          }
+        ]
+      },
+      "id": "a2babd4b-392c-499d-a160-6d295b73a642"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 2
+}

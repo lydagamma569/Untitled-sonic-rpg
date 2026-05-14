@@ -1,0 +1,11 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "cameraxpixel",
+      "symbol": "var_cameraxpixel"
+    }
+  ],
+  "constants": []
+}

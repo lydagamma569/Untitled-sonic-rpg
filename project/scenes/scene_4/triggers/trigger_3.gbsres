@@ -1,0 +1,58 @@
+{
+  "_resourceType": "trigger",
+  "id": "78220fd2-213e-4d26-b5a3-78a4178f3300",
+  "name": "",
+  "prefabId": "",
+  "x": 6,
+  "y": 10,
+  "symbol": "trigger_10",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 2,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Yo check it out",
+                "I'm in the house",
+                "carpet"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "29538067-cc17-4535-b7a1-b392e4ee8eff"
+          }
+        ]
+      },
+      "id": "ce792b1a-524a-4ea8-beb7-e7a06e4b72c4"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 2
+}

@@ -1,0 +1,132 @@
+{
+  "_resourceType": "scene",
+  "id": "7f591b97-fd46-4cda-a4c9-4eb6911374a5",
+  "_index": 6,
+  "name": "Scene 7",
+  "backgroundId": "10032679-e84f-4d31-82f1-a90b19f3dcea",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "bebd63fa-000d-4b3f-8aad-a3125f43a82b",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    "default-bg-4"
+  ],
+  "spritePaletteIds": [
+    null,
+    null,
+    ""
+  ],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_7",
+  "x": 648,
+  "y": 80,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "3e090c12-41cb-495f-8175-3d3172621141"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "*Knuckles is being\na moron",
+          "This fight is\nincomplete.",
+          "Please come again\nlater"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 5,
+        "maxHeight": 5,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -3,
+        "speedOut": -3,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__comment": false
+      },
+      "id": "6acd847e-0449-4767-9d8a-26f9c45591e5"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "L0",
+        "trueText": "Go to Pallet Town",
+        "falseText": "Return to GHZ"
+      },
+      "id": "f9ceaad2-11c7-467f-bff2-579af0b44d82"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "L0"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "69c8cfd3-6aab-4122-b778-41931d0772e4",
+              "x": {
+                "type": "number",
+                "value": 10
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "direction": "down",
+              "fadeSpeed": "2"
+            },
+            "id": "a79f88dc-9f39-4c19-be15-40b6c41f8938"
+          }
+        ],
+        "false": []
+      },
+      "id": "58b408e5-e8cc-4022-9c00-d433ea83e185"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "d6fb36a0-ca1e-4f50-a40b-746039273668",
+        "x": {
+          "type": "number",
+          "value": 10
+        },
+        "y": {
+          "type": "number",
+          "value": 3
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "8179fcaa-731a-4654-b160-7ebf936744db"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "11b5452b-187c-43a3-afb1-a1f4f74ffda2"
+}
